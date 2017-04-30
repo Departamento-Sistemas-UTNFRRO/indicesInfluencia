@@ -9,14 +9,12 @@ Script Python para, dado un conjunto de tweets, obtener los más influyentes en 
 
 ## Requisitos (Windows 64-bit)
 
-- Python 3.6: descargar Python 3.6 desde el siguiente link: https://www.python.org/ftp/python/3.6.1/python-3.6.1-amd64.exe . Al finalizar, realizar la instalación siguiendo el asistente. **Seleccionar opción Add Python 3.6 to PATH.**
+- Python 3.6: descargar Python 3.6 desde el siguiente link: https://www.python.org/ftp/python/3.6.1/python-3.6.1-amd64.exe . Al finalizar, realizar la instalación siguiendo el asistente. **Seleccionar opción Add Python 3.6 to PATH.**. Para testear la instalación, abrir una consola de comandos y ejecutar *python --version*.
 - Miniconda: descargar Minicoda desde el siguiente link: https://repo.continuum.io/miniconda/Miniconda3-latest-Windows-x86_64.exe . Al finalizar, realizar la instalación siguiendo el asistente. Para testear la instalación, abrir una consola de comandos y ejecutar *conda list*. (Más información en: https://conda.io/docs/install/quick.html)
 - Librerías: abrir la consola de comandos y ejecutar los siguientes para instalar las librerías necesarias:
   - *conda install pandas*
   - *conda install numpy*
   - *conda install scikit-learn*
-  - *conda install matplotlib*
-  - *conda install plotly*
   
   ### Notas
   - Para abrir la consola de comandos: presionar tecla Windows + R, en el diálogo escribir *cmd* y hacer click en Aceptar.
