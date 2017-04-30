@@ -135,24 +135,6 @@ def saveInCsv(tweetsFinal):
 		print("El archivo ya existe. Por favor, elija otro nombre.\n")
 		saveInCsv(tweetsFinal)
 
-# Show scree plot for principal components
-# Muestra scree plot para las componentes principales
-def screePlot(pca):
-	objects = []
-	ratio = []
-	for i in range(0,len(pca.components_)):
-		objects.append(('CP'+ str(i + 1)))
-		ratio.append(pca.explained_variance_ratio_[i] * 100)
-
-	y_pos = np.arange(len(objects))
-
-	 
-	plt.bar(y_pos, ratio, align='center', alpha=0.5)
-	plt.xticks(y_pos, objects)
-	plt.ylabel('Porcentaje de variabilidad explicada')
-	plt.title('Componentes principales')
- 
-	plt.show()
 
 # Main program
 def main():
@@ -172,7 +154,6 @@ def main():
 		tweetsSorted = sortByScore(tweetsWithScore)
 		tweetsRanked = percentile(tweetsSorted)
 		saveInCsv(tweetsRanked)
-		screePlot(pca)
 
 main() 
 
